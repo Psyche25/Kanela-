@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="ybanez" content="width=device-width", initial-scale="1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+	<style>
+	
+	
+	.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.title{
+    font-size: 45px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 20px 20px; /* Add padding to the menu items */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    justify-content: center; /* Center the menu items horizontally */
+    align-items: center; /* Center the menu items vertically */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 20px 20px; /* Add padding to the menu items */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add background color on hover */
+    color: #fff;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+	
+		body, html{
+			height: 100%;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		*{
+		box-sizing: border box;
+		}
+
+		.bg-img{/* The image used*/
+			background-image: url("bambam.gif");
+			min-height: 950px;
+			
+			/*center and scale the image nicely*/
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		/*Add styles to the form container*/
+		
+		.container{
+			position: absolute;
+			right: 0;
+			margin: 20px;
+			max-width: 400px;
+			padding: 16px;
+			background-color: lightblue;
+			opacity: 0.9;
+			
+		}
+
+		input[type="text"], input[type="password"]{
+			width: 90%;
+			padding: 15px;
+			margin: 5px 0 22px 0;
+			border: none;
+			background: #f1f1f1;
+		}
+
+		input[type=text]:focus, input[type=password]:focus{
+			background-color: #ddd;
+			outline: none;
+		}
+
+		.btn {
+			background-color: #000;
+			color: pink;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			opacity: 0.9;
+		}
+
+		
+
+		.btn:hover{
+			opacity: 1;
+		}
+		
+     .eye-icon {
+            position: absolute;
+            right: 20px;
+            top: 40%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+	</style>
+	</head>
+
+	<body>
+	      <div class="navbar"> 
+        <a href = "#" class = "title">Hentai Shop</a>
+        <div class="menu"> 
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </div>
+    <br><br>
+
+
+
+   
+        <center>
+    
+    
+		
+		<div class="bg-img">
+			<form action="ybanez.html" class="container">
+			 
+				<h1>Login</h1>
+				
+				<label foremail"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+<label for="psw"><b>Password</b></label>
+<div style="position: relative;">
+    <input type="password" id="passwordField" placeholder="Enter Password" name="psw" required>
+    <div class="eye-icon" onclick="togglePasswordVisibility()"><i class="fa-sharp fa-solid fa-eye"></i>
+    </div>
+</div>
+				<button type="submit" class="btn">Login</button>
+				<p> Don't have an accout? <a href = "#">Sign Up</a></p> 
+				<a href="#" class="fa fa-facebook"></a>
+       <a href="#" class="fa fa-twitter"></a>
+       <a href="#" class="fa fa-google"></a>
+       <a href="#" class="fa fa-instagram"></a>
+				
+			</form>
+		</div>
+		
+		<div class="footer">
+        <p>&copy; Hentai Shop. All Rights Reserved.</p>
+    </div>
+
+            </center>
+            <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("passwordField");
+            var eyeIcon = document.querySelector(".eye-icon i");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                eyeIcon.classList.remove("fa-eye");
+                eyeIcon.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                eyeIcon.classList.remove("fa-eye-slash");
+                eyeIcon.classList.add("fa-eye");
+            }
+        }
+    </script>
+	</body>
+	
+</html>
